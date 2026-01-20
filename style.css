@@ -152,7 +152,9 @@
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
     height: 300px;
-    margin-right: 5px
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
 .single-box img {
@@ -168,7 +170,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    position: relative;
+    position: absolute;
 }
 
 .single-box:hover .cover-layer {
@@ -179,12 +181,75 @@
     opacity: 0;
     transition: bottom 1s;
     bottom: 0;
-    position: relative;
+    position: absolute;
     width: 95%;
     margin-top: -30px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
-.impact-box:hover .impact-description {
+.single-box:hover .impact-description {
     opacity: 1;
     bottom: 40%;
+}
+
+.top-environmentalist {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.column {
+    flex-basis: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px 3px black;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+}
+
+.column p {
+    font-size: 17.5px;
+}
+
+.user img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.user-i4 small {
+    color: rgb(0, 200, 255);
+}
+
+#footer {
+    background: rgb(199, 199, 199);
+}
+
+.footer-row {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-img{
+    position:absolute;
+    width: 500px;
+    left: 35%;
+    opacity: 0.3;
+}
+.title-text p{
+    color: rgb(0, 198, 0);
+    font-weight: bold ;
 }
